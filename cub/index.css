@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding:0;
+    width: 300px;
+    height:300px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #222;
+}
+
+.cube{
+    position:absolute;
+    top:200px;
+    left:200px;
+}
+
+.cube div{
+    position:absolute;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(30deg);
+}
+
+.cube .big span{
+    position:absolute;
+    background: linear-gradient(to bottom,white,black);
+    transform: rotateY(calc(90deg* var(--i))) translateZ(170px);
+    transform-style: preserve-3d;
+}
